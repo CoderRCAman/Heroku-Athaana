@@ -1,0 +1,48 @@
+{
+  "short_name": "Athaana",
+  "name": "Athaana",
+  "description": "Athaana || Online Grocery Store",
+  "icons": [
+    {
+      "src":"./favicon-16x16.png",
+      "sizes":"16x16",
+      "type":"image/png"
+
+    },
+    {
+      "src":"./favicon-32x32.png",
+      "sizes":"32x32",
+      "type":"image/png"
+      
+    },
+    {
+      "src":"images/maskable_icon.png",
+      "sizes":"192x192",
+      "type":"image/png",
+      "purpose":"maskable"
+    },
+    
+   
+   
+    {
+      "src": "images/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+      
+      
+     
+      
+    },
+    {
+      "src":  "images/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "id": "1",
+  "start_url": ".",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
