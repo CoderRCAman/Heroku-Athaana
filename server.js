@@ -39,7 +39,7 @@ mongoose.connect(URI, {
     console.log('Connected to MongoDB')
 })
 
-const buildPath = path.normalize(path.join(__dirname, './client/build'));
+const buildPath = path.normalize(path.join(__dirname, '/client/build'));
 app.use(express.static(buildPath));
 
 app.get('(/*)?', async (req, res, next) => {
