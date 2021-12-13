@@ -5,7 +5,8 @@ const cors = require('cors')
 const fileUpload = require('express-fileupload')
 const cookieParser = require('cookie-parser') 
 const corsConfig = require('./cors/corsConfig') ;
-const path = require('path')
+const path = require('path') 
+const userRouter = require('./routes/userRouter')
 
 const app = express()
 app.use(express.json())
@@ -16,7 +17,7 @@ app.use(fileUpload({
 }))
 
 
-app.use('/user',require('./routes/userRouter'))
+app.use('/user',userRouter);
 app.use('/api',require('./routes/categoryRouter'))
 app.use('/api',require('./routes/upload'))
 app.use('/api', require('./routes/productRouter'))
