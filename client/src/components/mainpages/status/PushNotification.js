@@ -14,8 +14,9 @@ function PushNotification({ user_id, subscription, token }) {
     const rawData = window.atob(base64);
     return Uint8Array.from([...rawData].map((char) => char.charCodeAt(0)));
   }
-  function registerServiceWorker() {
-    let swUrl = `${process.env.PUBLIC_URL}/sw.js`;
+  function registerServiceWorker() { 
+    const REACT_APP_PUBLIC_KEY = BNv2C2R7Fs7o0OVxHNmDHGKqf5fKNPinye_1ZW031g5mmApEyZzlf-g3TVUX0KzQgZepjBkg7A6LZOzIZBzgi4Q
+    let swUrl = `${REACT_APP_PUBLIC_KEY}/sw.js`;
     return navigator.serviceWorker
       .register(swUrl)
       .then(function (registration) {
