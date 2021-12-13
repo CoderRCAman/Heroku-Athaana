@@ -1,4 +1,5 @@
 const User = require("../models/userModel");
+
 const PushCtrl = {
   AcceptSubscription: async (req, res) => {
     try {

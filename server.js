@@ -28,7 +28,7 @@ app.use('/api',require('./routes/PushNotification'))
 
 
 
-const URI = process.env.MONGODB_URL  ||  "mongodb+srv://grocery:admin123@grocery.yqllp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const URI = 'mongodb+srv://athaana:1234@cluster0.4rzb2.mongodb.net/TestAthaana?retryWrites=true&w=majority'
 mongoose.connect(URI, {
     useCreateIndex: true,
     useFindAndModify: false,
@@ -39,7 +39,7 @@ mongoose.connect(URI, {
     console.log('Connected to MongoDB')
 })
 
-const buildPath = path.normalize(path.join(__dirname, './build'));
+const buildPath = path.normalize(path.join(__dirname, './client/build'));
 app.use(express.static(buildPath));
 
 app.get('(/*)?', async (req, res, next) => {

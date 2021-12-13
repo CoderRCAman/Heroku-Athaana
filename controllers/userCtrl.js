@@ -7,9 +7,11 @@ const Address = require("../models/AddressModel");
 const Order = require("../models/OrderModel");
 const Products = require("../models/productModel");
 const webpush = require("web-push");
+const PRIVATE_KEY = Bzlfe7INhiLk67fAiQJpOw5opRzMejgl53_7_ftoGl4
+const PUBLIC_KEY = BNv2C2R7Fs7o0OVxHNmDHGKqf5fKNPinye_1ZW031g5mmApEyZzlf-g3TVUX0KzQgZepjBkg7A6LZOzIZBzgi4Q
 const VAPID_KEY = {
-  PUBLIC_KEY: process.env.PUBLIC_KEY,
-  PRIVATE_KEY: process.env.PRIVATE_KEY,
+  PUBLIC_KEY: PUBLIC_KEY,
+  PRIVATE_KEY: PRIVATE_KEY
 };
 
 const crypto = require("crypto");
